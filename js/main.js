@@ -82,3 +82,21 @@ app.controller('PageCtrl', function ( /* $scope, $location, $http */ ) {
         selector: "a[data-toggle=tooltip]"
     })
 });
+
+$(document).ready(function () {
+    $(window).scroll(function () {
+        var posFromTop = $(window).scrollTop();
+
+        if (posFromTop > 100) {
+            $(".logo").fadeOut(200);
+            $(".midhome").fadeIn(900);
+            document.getElementById("menu").setAttribute("style",
+                "margin-top:" + 20 + "px");
+        } else {
+            $(".logo").fadeIn(900);
+            $(".midhome").fadeOut(200);
+            document.getElementById("menu").setAttribute("style",
+                "margin-top:" + 0 + "px");
+        }
+    });
+});

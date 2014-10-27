@@ -37,7 +37,7 @@ a::-moz-focus-inner {
 
 .section,
 .section-colored {
-    padding: 100px 0;
+    padding: 150px 0;
 }
 .section-colored {
     background-color: rgba(37, 139, 226, 0.5);
@@ -149,4 +149,20 @@ footer {
 }
 .infobron {
     color: #3d71ff;
+}
+
+.navbar-center {
+    text-align: center;
+}
+
+.midhome {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+
+.midhome li {
+    margin: auto;
+    float: none;
+    display:inline-block
 }
